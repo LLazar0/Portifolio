@@ -1,0 +1,114 @@
+/* Organizado: Section-tag-atributo */
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #06111A;
+  color: #ffff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  font-size: medium;
+  color: #ffff;
+}
+
+h2 {
+  font-size: 25px;
+  color: #ffff;
+}
+
+h3 {
+  font-size: 30px;
+  color: #0DF1F1;
+}
+
+p {
+  font-size: 15px;
+  color: #7F94A5;
+}
+
+/* ESTILIZADOR DA NAVBAR */
+
+.Navbar-container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.Navbar-container-list {
+  display: flex;
+}
+
+.Navbar-container-list li {
+  list-style: none;
+  width: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Navbar-container-list li a {
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffff;
+  width: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.Navbar-container-list li a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0DF1F1;
+  transition: width 0.3s ease-in-out;
+}
+
+.Navbar-container-list li a:hover::before {
+  width: 100%;
+  transition: width 0.3s ease-in-out; /* Adiciona uma transição suave ao retirar o cursor */
+}
+
+.Navbar-container-icon {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navbar-icon {
+  width: 30px;
+  height: 30px;
+  color: #0DF1F1;
+  cursor: pointer;
+}
