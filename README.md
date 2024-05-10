@@ -1,1 +1,1 @@
-Linkk do website: https://llazar0.github.io/Portifolio/
+Link do website: https://llazar0.github.io/Portifolio/
