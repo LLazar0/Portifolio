@@ -173,6 +173,11 @@ button {
     transition: 0.3s;
 }
 
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
 button:hover {
     transition: 0.3s;
     background-color: #0DF1F1;
@@ -243,3 +248,75 @@ span {
     }
 }
 
+/*
+    FORMAÇÃO
+*/
+
+.formacao {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.formacao h2 {
+    font-size: 30px;
+    color: #0DF1F1;
+    border-bottom: 3px solid #fff;
+}
+
+.formacao h3 {
+    color: #fff;
+}
+
+.inst {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.inst-grau {
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+}
+
+.grau-logo {
+    width: 200px;
+    height: 200px;
+    background-image: url('img/logo-grau-branca\ 1.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.inst-nassau {
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+}
+
+.nassau-logo {
+    width: 200px;
+    height: 200px;
+    background-image: url('img/logo-uninassau\ 1.png');
+    background-position: center;
+    background-size: 150px;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 730px) {
+    .formacao {
+        padding-top: 5rem;
+        height: auto;
+    }
+
+    .inst {
+        display: flex;
+        flex-direction: column;
+    }
+}
